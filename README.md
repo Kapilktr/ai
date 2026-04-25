@@ -71,6 +71,7 @@ Instead of using `curl`, you can use the interactive CLI client:
 
 1.  Open a new terminal window.
 2.  Activate the environment: `.venv\Scripts\activate` or just use `python` from the root if venv is active.
+also create .env file
 3.  Run the client:
     ```bash
     python client.py
@@ -90,7 +91,7 @@ curl -X POST "http://localhost:8003/chat" \
      -d '{"query": "What meetings do I have today?"}'
 ```
 
-## 🧠 How it Works
+##  How it Work
 
 1.  **Registration**: Agents start up and register with the **Registry** (Port 9000). They send heartbeats every few seconds.
 2.  **Discovery**: The **Router** (Port 8003) queries the Registry to see who is online.
