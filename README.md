@@ -1,8 +1,9 @@
+
 # Agent-to-Agent (A2A) System
 
 A decentralized, registry-driven agent system using FastAPI and Google Gemini.
 
-## 📂 Structure
+##  Structure
 
 - `registry/`: Central discovery service (Port 9000)
 - `agents/`: Independent agent services
@@ -11,7 +12,7 @@ A decentralized, registry-driven agent system using FastAPI and Google Gemini.
     - `meeting_agent/`: Mock meeting scheduler (Port 8004)
 - `router/`: Main user interface (Port 8003)
 
-## 🚀 Setup
+##  Setup
 
 1.  **Environment**:
     ```bash
@@ -96,3 +97,6 @@ curl -X POST "http://localhost:8003/chat" \
 3.  **Routing**: The Router uses **Gemini** to decide which agent matches the user's intent.
 4.  **Execution**: The Router calls the selected agent (A2A communication).
 5.  **Response**: The result is returned to the user.
+
+# ai
+
