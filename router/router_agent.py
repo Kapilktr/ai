@@ -120,10 +120,10 @@ async def call_agent(agent_url: str, task_input: str, context: dict):
 
 # --- Endpoints ---
 
-@app.post("/chat", response_model=AgentResponse)
-async def chat(request: UserRequest):
-    """Main entry point for user interaction."""
-    logger.info(f"Received query: {request.query}")
+# @app.post("/chat", response_model=AgentResponse)
+# async def chat(request: UserRequest):
+#     """Main entry point for user interaction."""
+#     logger.info(f"Received query: {request.query}")
     
     # 1. Discovery
     agents = await get_available_agents()
