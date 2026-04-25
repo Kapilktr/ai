@@ -91,9 +91,9 @@ curl -X POST "http://localhost:8003/chat" \
      -d '{"query": "What meetings do I have today?"}'
 ```
 
-##  How it Work
+##  How it Works
 
-1.  **Registration**: Agents start up and register with the **Registry** (Port 9000). They send heartbeats every few seconds.
+1.  **Registration**: agent will stat and will get register **Registry** (Port 9000). They send heartbeats every few seconds.
 2.  **Discovery**: The **Router** (Port 8003) queries the Registry to see who is online.
 3.  **Routing**: The Router uses **Gemini** to decide which agent matches the user's intent.
 4.  **Execution**: The Router calls the selected agent (A2A communication).
